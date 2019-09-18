@@ -18,9 +18,14 @@
   },
   "homepage": "https://github.com/anirudhganwal06/study_buddy#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "connect-mongodb-session": "^2.2.0",
+    "dotenv": "^8.1.0",
     "ejs": "^2.7.1",
     "express": "^4.17.1",
+    "express-session": "^1.16.2",
     "mongoose": "^5.7.1"
   },
   "devDependencies": {

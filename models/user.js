@@ -19,8 +19,12 @@ const UserSchema = new Schema({
         type: String,
         required: true
     },
-    section: {
+    password: {
         type: String,
+        required: true
+    },
+    section: {
+        type: Object,
         required: false
     }
 });
