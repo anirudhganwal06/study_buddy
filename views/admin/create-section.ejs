@@ -1,0 +1,17 @@
+<h1>Create section page</h1>
+
+<table>
+    <% let i, j; %>
+    <% for (j = 1; j <= 12; j++) { %>
+    <span style="margin: 10px 60px"><%= timings[j-1] %></span>
+    <% } %>
+    <% for (i = 1; i <= 5; i++) { %>
+    <tr>
+        <% for (j = 1; j <= 12; j++) { %>
+        <td>
+            <input style="width: 150px" name="tt_<%= i %>_<%= j %>">
+        </td>
+        <% } %>
+    </tr>
+    <% } %>
+</table>

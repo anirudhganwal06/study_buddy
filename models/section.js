@@ -3,11 +3,11 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const SectionSchema = new Schema({
-    year: {
+    sem: {
         type: Number,
         required: true
     },
-    department: {
+    branch: {
         type: String,
         required: true
     },
