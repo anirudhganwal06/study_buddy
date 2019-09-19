@@ -17,4 +17,8 @@ router.post('/:userId/logout', adminIsAuth, adminController.postLogout);
 
 router.get('/:userId/dashboard', adminIsAuth, adminController.getDashboard);
 
+router.get('/:userId/create-section', adminIsAuth, adminController.getCreateSection);
+
+router.post('/:userId/create-section', adminIsAuth, adminController.postCreateSection);
+
 module.exports = router;
