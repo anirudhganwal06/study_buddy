@@ -11,7 +11,7 @@ exports.postLogin = async (req, res) => {
     try {
         const email = req.body.email;
         const password = req.body.password;
-        const user = await User.findOne({ email });
+        const user = await User.findOne({ email, type: 'admin' });
         if (user) {
             const isMatch = await bcrypt.compare(password, user.password);
             if (isMatch) {
