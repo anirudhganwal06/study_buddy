@@ -1,0 +1,584 @@
+label.error {
+    color: red!important;
+}
+ul.file_name {
+    list-style: none;
+    padding: inherit;
+}
+.file_name li {
+    font-weight: normal;
+    font-size: 15px;
+    color: black;
+}
+section p,
+section li {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(129, 129, 129);
+}
+
+section b {
+    color: rgb(53, 53, 53);
+}
+
+section {
+    padding: 50px 10px;
+}
+
+.sectionHeading {
+    font-family: 'Roboto Slab';
+    font-weight: 300;
+    font-size: 42px;
+    text-align: center;
+    background-image: linear-gradient(to left, #C845AA, #770DDB);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.postHeadingPara {
+    text-align: center;
+    padding: 20px 24% 30px;
+}
+
+.greySection {
+    background-color: #dddddd;
+}
+
+.themeColorBtn {
+    background-image: linear-gradient(to top left, #C845AA, #770DDB);
+}
+
+.themeColorHoverBtn {
+    color: white;
+    background-image: linear-gradient(to left, #C845AA, #770DDB);
+    font-weight: 600;
+}
+
+.themeColorHoverBtn:hover {
+    color: #C845AA;
+    background-image: none;
+    border: 1px solid #C845AA;
+}
+
+.themeColor {
+    background-image: linear-gradient(to left, #C845AA, #770DDB);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.blinkIt {
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 992px) {
+    .postHeadingPara {
+        padding: 20px 5% 30px;
+    }
+}
+
+@media only screen and (max-width: 875px) {
+    .navbar {
+        font-size: 12px;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .sectionHeading {
+        font-size: 34px;
+    }
+
+    .postHeadingPara {
+        font-size: 14px;
+        padding: 20px 0% 30px;
+    }
+}
+
+/****************************
+SUBMIT WORK
+*****************************/
+
+#submitWorkForm {
+    position: fixed;
+    width: 23%;
+    margin-bottom: 20px;
+    max-width: 350px;
+    margin: auto;
+}
+
+.submitWorkSection .rightBorderedDiv {
+    border-right: 1px solid grey;
+}
+
+#makeItSmallHeading {
+    font-size: 26px;
+}
+
+@media only screen and (max-width: 992px) {
+    #submitWorkForm {
+        width: 40%
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #submitWorkForm {
+        position: relative;
+        width: 100%;
+    }
+
+    .submitWorkSection .rightBorderedDiv {
+        border-bottom: 1px solid grey;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #makeItSmallHeading {
+        font-size: 16px;
+    }
+}
+
+/****************************
+HEADER
+*****************************/
+
+#headerSection {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    padding-bottom: 100px;
+}
+
+#headerSection p {
+    color: white;
+}
+
+#headerSection #particles-js {
+    position: absolute;
+    background-image: linear-gradient(to left, #C845AA, #770DDB);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.form-control:invalid {
+    border-color: red;
+    box-shadow: none;
+}
+
+/****************************
+NAV SECTION
+*****************************/
+
+
+.navSection {
+    font-weight: 300;
+    font-family: 'Roboto Slab';
+}
+
+.navSection .nav-item {
+    margin: 0 12px;
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+}
+
+
+
+
+
+/****************************
+AMAZING FEATURES SECTION
+****************************/
+
+
+
+/****************************
+CHOOSE YOUR PLAN SECTION
+****************************/
+
+.plans {
+    margin-top: 2rem;
+    transition: 0.6s;
+}
+
+.plans:hover {
+    margin-top: -5px;
+}
+
+.planPrice {
+    font-family: 'Roboto Slab';
+    font-weight: 300;
+    font-size: 60px;
+}
+
+
+/**************************
+PROPERTIES SECTION
+***************************/
+
+#propSection .shadowBox {
+    box-shadow: 0 0 5px;
+    padding: 20px
+}
+
+#propSection .shadowBox:hover {
+    background-color: #dddddd;
+}
+
+
+/**************************
+TEAM SECTION
+***************************/
+
+#teamSection .row div {
+    padding: 7px;
+    transition: 0.5s;
+}
+
+#teamSection .row div:hover {
+    padding: 2px;
+}
+
+/***************************
+CLIENTS SECTION
+****************************/
+
+.carousel {
+    margin-top: 20px;
+}
+
+.carousel-item {
+    padding-top: 30px;
+    text-align: center;
+    min-height: 320px;
+    /* Prevent carousel from being distorted if for some reason image doesn't load */
+}
+
+.clientName {
+    color: black;
+}
+
+.clientPost {
+    color: rgba(0, 0, 0, 0.678);
+}
+
+#clientsSection img {
+    margin: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .carousel-item {
+        min-height: 400px;
+    }
+}
+
+@media only screen and (max-width: 455px) {
+    .carousel-item {
+        min-height: 500px;
+    }
+}
+
+
+
+/***************************
+GET IN TOUCH SECTION
+****************************/
+
+.getInTouchFormContainer {
+    padding: 20px;
+}
+
+.mapContainer {
+    padding: 20px;
+}
+
+/***************************
+FOOTER SECTION
+****************************/
+
+#footerSection {
+    background-color: rgb(58, 58, 58);
+    color: rgb(139, 139, 139);
+    font-size: 18px;
+}
+
+#footerSection span:hover {
+    color: #C845AA;
+}
+
+
+/**************************
+ContactUs Form
+***************************/
+
+.contactUsForm {
+    margin: 30px 25% 20px;
+    border-radius: 10px;
+    min-width: 410px;
+}
+
+.contactUsForm .row {
+    padding: 0 15px;
+}
+
+.contactOption {
+    padding: 10px;
+    margin: 0px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#callOption {
+    border: 5px solid #C845AA;
+    border-bottom: none;
+    border-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    box-sizing: border-box;
+}
+
+#messageOption {
+    border-bottom: 5px solid #C845AA;
+    border-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    box-sizing: border-box;
+}
+
+.contactFormInner {
+    border: 5px solid #C845AA;
+    padding: 30px;
+    /* height: 500px; */
+    border-top: none;
+    border-radius: 5px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.contactFormInner h3 {
+    font-weight: 700;
+}
+
+.contactUsForm .btn {
+    color: white;
+    background-image: linear-gradient(to left, #C845AA, #770DDB);
+    font-weight: 600;
+}
+
+.contactUsForm .btn:hover {
+    color: #C845AA;
+    background-image: none;
+    border: 1px solid #C845AA;
+}
+
+#messageContainer {
+    display: none;
+}
+
+@media only screen and (max-width: 993px) {
+    .contactUsForm {
+        margin: 30px 0px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .contactUsForm {
+        margin: 30px 0px;
+    }
+}
+/***************************
+ADMIN LOGIN
+****************************/
+
+.adminLoginForm,
+:after,
+:before {
+    box-sizing: border-box
+}
+
+.adminLoginForm .clearfix:after,
+.adminLoginForm .clearfix:before {
+    content: '';
+    display: table
+}
+
+.adminLoginForm .clearfix:after {
+    clear: both;
+    display: block
+}
+
+.adminLoginForm a {
+    color: inherit;
+    text-decoration: none
+}
+
+.adminLoginForm .login-wrap {
+    width: 100%;
+    margin: auto;
+    max-width: 525px;
+    min-height: 670px;
+    position: relative;
+    background: url(https://raw.githubusercontent.com/khadkamhn/day-01-login-form/master/img/bg.jpg) no-repeat center;
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19);
+}
+
+.adminLoginForm .login-html {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 90px 70px 50px 70px;
+    background: rgba(70, 73, 80, 0.9);
+}
+
+.adminLoginForm .login-html .sign-in-htm,
+.adminLoginForm .login-html .sign-up-htm {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    transition: all .4s linear;
+}
+
+.adminLoginForm .login-html .sign-in,
+.adminLoginForm .login-html .sign-up,
+.adminLoginForm .login-form .group .check {
+    display: none;
+}
+
+.adminLoginForm .login-html .tab,
+.adminLoginForm .login-form .group .label {
+    text-transform: uppercase;
+}
+
+.adminLoginForm .login-html .tab {
+    font-size: 22px;
+    margin-right: 15px;
+    padding-bottom: 5px;
+    margin: 0 15px 10px 0;
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+}
+
+.adminLoginForm .login-html .sign-in:checked+.tab,
+.adminLoginForm .login-html .sign-up:checked+.tab {
+    color: #fff;
+    border-color: #1161ee;
+}
+
+.adminLoginForm .login-form {
+    min-height: 345px;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+.adminLoginForm .login-form .group {
+    margin-bottom: 15px;
+}
+
+.adminLoginForm .login-form .group .label,
+.adminLoginForm .login-form .group .input {
+    width: 100%;
+    color: #fff;
+    display: block;
+}
+
+.adminLoginForm .login-form .group .input {
+    border: none;
+    padding: 15px 20px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, .1);
+}
+
+.adminLoginForm .login-form .group input[data-type="password"] {
+    text-security: circle;
+    -webkit-text-security: circle;
+}
+
+.adminLoginForm .login-form .group .label {
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+}
+
+
+.adminLoginForm .login-form .group label .icon {
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+    position: relative;
+    display: inline-block;
+    background: rgba(255, 255, 255, .1);
+}
+
+.adminLoginForm .login-form .group label .icon:before,
+.adminLoginForm .login-form .group label .icon:after {
+    content: '';
+    width: 10px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    transition: all .2s ease-in-out 0s;
+}
+
+.adminLoginForm .login-form .group label .icon:before {
+    left: 3px;
+    width: 5px;
+    bottom: 6px;
+    transform: scale(0) rotate(0);
+}
+
+.adminLoginForm .login-form .group label .icon:after {
+    top: 6px;
+    right: 0;
+    transform: scale(0) rotate(0);
+}
+
+.adminLoginForm .login-form .group .check:checked+label {
+    color: #fff;
+}
+
+.adminLoginForm .login-form .group .check:checked+label .icon {
+    background: #1161ee;
+}
+
+.adminLoginForm .login-form .group .check:checked+label .icon:before {
+    transform: scale(1) rotate(45deg);
+}
+
+.adminLoginForm .login-form .group .check:checked+label .icon:after {
+    transform: scale(1) rotate(-45deg);
+}
+
+.adminLoginForm .login-html .sign-in:checked+.tab+.sign-up+.tab+.login-form .sign-in-htm {
+    transform: rotate(0);
+}
+
+.adminLoginForm .login-html .sign-up:checked+.tab+.login-form .sign-up-htm {
+    transform: rotate(0);
+}
+
+.adminLoginForm .hr {
+    height: 2px;
+    margin: 60px 0 50px 0;
+    background: rgba(255, 255, 255, .2);
+}
+
+.adminLoginForm .foot-lnk {
+    text-align: center;
+}
+
+/*------*/
+
+.btn, .btn-primary, .btn-primary:hover, .btn-primary:visited{
+    background-color: #ffffff !important;
+    color: #1161ee !important;
+    font-weight: 400 !important;
+    border: 1px solid white !important;
+    font-size: 0em
+}
