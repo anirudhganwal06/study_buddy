@@ -1,17 +1,29 @@
 <h1>Create section page</h1>
 
-<table>
-    <% let i, j; %>
-    <% for (j = 1; j <= 12; j++) { %>
-    <span style="margin: 10px 60px"><%= timings[j-1] %></span>
-    <% } %>
-    <% for (i = 1; i <= 5; i++) { %>
-    <tr>
+
+
+<form action="/admin/<%= userId %>/create-section" method="POST">
+    <input type="text" name="sem" placeholder="semester">
+    <input type="text" name="branch" placeholder="branch">
+    <input type="text" name="sectionNumber" placeholder="section number">
+    <br><br>
+    eg: MDAVE:Mayank Dave/VS:Vikram Singh<br>
+    <input style="width: 1000px" type="text" name="teachers" placeholder="all teachers">
+    <br><br>
+    <table>
+        <% let i, j; %>
         <% for (j = 1; j <= 12; j++) { %>
-        <td>
-            <input style="width: 150px" name="tt_<%= i %>_<%= j %>">
-        </td>
+        <span style="margin: 10px 39px"><%= timings[j-1] %> - <%= timings[j] %></span>
         <% } %>
-    </tr>
-    <% } %>
-</table>
+        <% for (i = 1; i <= 5; i++) { %>
+        <tr>
+            <% for (j = 1; j <= 12; j++) { %>
+            <td>
+                <input style="width: 150px" name="tt_<%= i %>_<%= j %>">
+            </td>
+            <% } %>
+        </tr>
+        <% } %>
+    </table>
+    <button type="submit">Create time table</button>
+</form>
