@@ -1,1 +1,6 @@
-<h1>This is admin dashboard.</h1>
+<h1>Welcome <%= username %></h1>
+<a href="/admin/<%= userId %>/dashboard">Dashboard</a><br>
+<a href="/admin/<%= userId %>/create-section">Create Section</a><br>
+<form action="/admin/<%= userId %>/logout" method="POST">
+    <button type="submit">Logout</button>
+</form>

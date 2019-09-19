@@ -3,11 +3,11 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const SectionSchema = new Schema({
-    year: {
+    sem: {
         type: Number,
         required: true
     },
-    department: {
+    branch: {
         type: String,
         required: true
     },
@@ -23,6 +23,10 @@ const SectionSchema = new Schema({
         type: Array,
         required: true
     },
+    teachersAbbr: {
+        type: Object,
+        required: true
+    }
 });
 
 module.exports = mongoose.model('section', SectionSchema);
