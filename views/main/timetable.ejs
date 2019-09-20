@@ -1,97 +1,56 @@
 <%- include('../includes/start') %>
+<style>
+    /* .timetableSection .subCode {}
+
+    .timetableSection .type {}
+
+    .timetableSection .teacherCode {} */
+</style>
 <%- include('../includes/headBody') %>
-<div class="container-fluid">
-    <br>
-    <br>
-    <br>
-    <div style="text-align: center" class="alert alert-success"> Time Table</div>
-
-    <div>
-        <span style="margin-left:25px">8:30-9:25</span>
-        <span style="margin-left:55px">9:25-10:20</span>
-        <span style="margin-left:35px">10:20-10:40</span>
-        <span style="margin-left:43px">10:40-11:35</span>
-        <span style="margin-left:40px">11:35-12:30</span>
-        <span style="margin-left:40px">12:30-1:25</span>
-        <span style="margin-left:40px">1:25-1:45</span>
-        <span style="margin-left:65px">1:45-2:40</span>
-        <span style="margin-left:60px">2:40-3:35</span>
-        <span style="margin-left:55px">3:35-4:30</span>
-        <span style="margin-left:65px">4:30-5:25</span>
-        <span style="margin-left:45px">5:25-6:20</span>
+<section class="p-5" id="timetableSection">
+    <h1 class="p-3 themeColor text-center">Time Table</h1>
+    <div class="container-fluid text-center">
+        <div class="timetableContainer">
+            <div class="row">
+                <% let i, j; %>
+                <% for (i = 0; i < 5; i++) { %>
+                <% for (j = 0; j < 12; j++) { %>
+                <% let bgColor = 'grey'; %>
+                <% if (timetable[i][j] === null) { %>
+                <% bgColor = 'grey'; %>
+                <% } else { %>
+                <% if (timetable[i][j].status === 'cancel') { %>
+                <% bgColor = 'red'; %>
+                <% } else { %>
+                <% bgColor = 'green'; %>
+                <% } %>
+                <% } %>
+                <div class="col-1 ttBoxContainer">
+                    <div class="ttBox" style="background-color: <%= bgColor %>">
+                        <span class="location">
+                            <%= timetable[i][j] === null ? 'Break' : timetable[i][j].location %>
+                        </span>
+                        <br>
+                        <span class="subCode">
+                            <%= timetable[i][j] === null ? '' : timetable[i][j].subCode %>
+                        </span>
+                        <br>
+                        <span class="type">
+                            <%= timetable[i][j] === null ? '' : timetable[i][j].type %>
+                        </span>
+                        <br>
+                        <span class="teacherCode">
+                            <%= timetable[i][j] === null ? '' : timetable[i][j].teacherCode %>
+                        </span>
+                        <br>
+                    </div>
+                </div>
+                <% } %>
+                <% } %>
+            </div>
+        </div>
     </div>
-    <table class="table" border="1px">
-        <tr>
-            <th>A </th>
-            <th>B </th>
-            <th>A </th>
-            <th>B </th>
-            <th>A </th>
-            <th>B </th>
-            <th>A </th>
-            <th>B </th>
-            <th>A </th>
-            <th>B </th>
-            <th>A </th>
-            <th>B </th>
-        </tr>
-        <tr>
-            <th>A </th>
-            <th>B </th>
-            <th>A </th>
-            <th>B </th>
-            <th>A </th>
-            <th>B </th>
-            <th>A </th>
-            <th>B </th>
-            <th>A </th>
-            <th>B </th>
-            <th>A </th>
-            <th>B </th>
-        </tr>
-        <tr>
-            <th>A </th>
-            <th>B </th>
-            <th>A </th>
-            <th>B </th>
-            <th>A </th>
-            <th>B </th>
-            <th>A </th>
-            <th>B </th>
-            <th>A </th>
-            <th>B </th>
-            <th>A </th>
-            <th>B </th>
-        </tr>
-        <tr>
-            <th>A </th>
-            <th>B </th>
-            <th>A </th>
-            <th>B </th>
-            <th>A </th>
-            <th>B </th>
-            <th>A </th>
-            <th>B </th>
-            <th>A </th>
-            <th>B </th>
-            <th>A </th>
-            <th>B </th>
-        </tr>
-        <tr>
-            <th>A </th>
-            <th>B </th>
-            <th>A </th>
-            <th>B </th>
-            <th>A </th>
-            <th>B </th>
-            <th>A </th>
-            <th>B </th>
-            <th>A </th>
-            <th>B </th>
-            <th>A </th>
-            <th>B </th>
-        </tr>
+</section>
 
-    </table>
-</div>
+
 <%- include('../includes/end') %>

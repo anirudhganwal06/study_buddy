@@ -1,0 +1,36 @@
+.themeColor {
+    background-image: linear-gradient(to left, #C845AA, #770DDB);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+
+/************************  time table  ******************************/
+
+.timetableContainer {
+    padding: 50px;
+    min-width: 1400px;
+    overflow-x: auto
+}
+
+.ttBoxContainer {
+    padding: 0;
+}
+
+.ttBox {
+    background-color: rgb(85, 85, 85);
+    margin: 10px;
+    padding: 10px 2px;
+    overflow: hidden;
+    transition: 0.5s;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.ttBox:hover {
+    margin: -8px;
+    padding: 28px;
+}
+

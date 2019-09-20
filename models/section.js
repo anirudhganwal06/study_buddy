@@ -23,7 +23,7 @@ const SectionSchema = new Schema({
         type: Array,
         required: true
     },
-    teachersAbbr: {
+    subjectsAbbr: {
         type: Object,
         required: true
     }

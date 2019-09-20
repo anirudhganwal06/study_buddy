@@ -111,13 +111,13 @@ exports.postCreateSection = async (req, res) => {
             }
         }
     }
-    let teachers = req.body.teachers.trim().split('/');
-    console.log(teachers);
-    let teachersAbbr = {};
-    for (i = 0; i < teachers.length; i++) {
-        const abbr = teachers[i].split(':')[0];
-        const fullForm = teachers[i].split(':')[1];
-        teachersAbbr[abbr] = fullForm;
+    let subjects = req.body.teachers.trim().split('/');
+    console.log(subjects);
+    let subjectsAbbr = {};
+    for (i = 0; i < subjects.length; i++) {
+        const abbr = subjects[i].split(':')[0];
+        const fullForm = subjects[i].split(':')[1];
+        subjectsAbbr[abbr] = fullForm;
     }
     const section = new Section({
         sem: req.body.sem,
@@ -125,7 +125,7 @@ exports.postCreateSection = async (req, res) => {
         sectionNumber: req.body.sectionNumber,
         timetable,
         notifications: [],
-        teachersAbbr
+        subjectsAbbr
     });
 
     await section.save();
