@@ -147,7 +147,7 @@ HEADER
     position: relative;
     width: 100%;
     padding: 0;
-    padding-bottom: 100px;
+    padding-bottom: 50vh;
 }
 
 #headerSection p {
