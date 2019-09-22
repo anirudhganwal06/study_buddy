@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400|Roboto+Slab:100,300,400" rel="stylesheet">
+    <script src="js/jquery/jquery-2.1.3.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <title>signUpForm</title>
+</head>
+<body>
+    <!-- <div style="height: 100px; background-color: black">.</div> -->
+    <section id="headerSection">
+        <div id="particles-js"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="mainHeading">
+                        <h1>Sign Up</h1>
+                        <!-- <h1 class="sectionHeading">
+                            Sign Up
+                        </h1> -->
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="signUpForm">
+                        <div class="row">
+                            <div class="col-6 signUpOption" id="studentOption" onclick="showStudentForm();">
+                                Student
+                            </div>
+                            <div class="col-6 signUpOption" id="teacherOption" onclick="showTeacherForm();">
+                                Teacher
+                            </div>
+                        </div>
+                        <div class="signUpFormInner">
+                            <div id="studentContainer">
+                                <form action="#">
+                                    <div class="form-group">
+                                        <input class="form-control" name="fname" type="text" placeholder="Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" name="rollNo" type="number" placeholder="Roll No.">
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" name="semester" type="number" placeholder="Semester">
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" name="branch" type="text" placeholder="Branch">
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" name="section" type="number" placeholder="Section">
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" name="email" type="email" placeholder="Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" name="password" type="password" placeholder="Password">
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" type="confirmPassword" placeholder="Confirm Password">
+                                    </div>
+                                    <button class="btn btn-block">Sign Up</button>   
+                                </form>
+                            </div>
+                            <div id="teacherContainer">
+                                <form action="#">
+                                    <div class="form-group">
+                                        <input class="form-control" name="tName" type="text" placeholder="Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" type="email" placeholder="Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" type="password" placeholder="password">
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" type="confirmPassword" placeholder="Confirm Password">
+                                    </div>
+                                    <button class="btn btn-block">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    
+    <script src="js/main.js"></script>
+    <script src="js/particles/particle.min.js "></script>
+    <script src="js/particles/particle-config.js "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
+
+    

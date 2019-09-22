@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../../static/css/custom.css">
+    <link rel="stylesheet" type="text/css" href="../../static/css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400|Roboto+Slab:100,300,400" rel="stylesheet">
+    <script src="js/jquery/jquery-2.1.3.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <title>loginForm</title>
+</head>
+<body>
+    <section id="headerSection">
+        <div id="particles-js"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="mainHeading">
+                        <h1>Login</h1>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12" style="padding: 15% 50px 0">
+                    <div class="container formContainer"
+                        style="background-color: white; padding: 25px; border-radius: 5px; box-shadow: 0 0 20px; margin-top: 15%">
+                        <form action="#" method="POST">
+                            <h2 class="text-center"> Login </h2>
+                            <div class="form-group">
+                                <select name="subject" class="custom-select" id="subject" style="border-width: 2px" required>
+                                    <option value="">Type</option>
+                                    <option value="student">Student</option>
+                                    <option value="teacher">Teacher</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" id="tEmail" type="email" placeholder="Email" required="required">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" id="tPassword" type="password" placeholder="Password" required="required">
+                            </div>
+                            <input type="submit" name="submit" value="Submit" class="btn themeColorHoverBtn btn-block">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+    <script src="js/particles/particle.min.js "></script>
+    <script src="js/particles/particle-config.js "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="js/custom.js"></script>
+</body>
+</html>
