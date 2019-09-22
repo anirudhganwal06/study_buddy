@@ -1,0 +1,71 @@
+<!-- <nav class="navbar navbar-expand-md sticky-top navbar-dark justify-content-center"
+    style="padding: 10px 10vw; background-image: linear-gradient(to left, #C845AA, #770DDB);">
+    <a class="navbar-brand" style="color: white; margin-left: 1%" href="/">STUDY BUDDY</a>
+    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"
+        aria-controls="collapsibleNavbar" aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center float-right" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="">Section 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">Section 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">Section 3</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">Section 4</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">Section 5</a>
+            </li>
+        </ul>
+    </div>
+</nav> -->
+
+
+
+
+<nav class="navbar navbar-expand-md sticky-top navbar-dark"
+    style="padding: 10px 10vw; background-image: linear-gradient(to left, #C845AA, #770DDB);">
+    <div class="container">
+        <a class="navbar-brand font-weight-bold" style="color: white" href="/">STUDY BUDDY</a>
+
+
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"
+            aria-controls="collapsibleNavbar" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar" style="float: right">
+            <ul class="navbar-nav ml-auto">
+                <% if (isLoggedIn) { %>
+                <li class="nav-item">
+                    <a class="nav-link" style="padding: 8px 20px; color: white"
+                        href="/section/<%= sectionId %>/timetable">Time Table</a>
+                </li>
+                <% } else { %>
+                <% if (sectionEntered) { %>
+                <li class="nav-item">
+                    <a class="nav-link" style="padding: 8px 20px; color: white"
+                        href="/section/<%= sectionId %>/dashboard">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="padding: 8px 20px; color: white"
+                        href="/section/<%= sectionId %>/timetable">Time Table</a>
+                </li>
+                <% } %>
+                <li class="nav-item">
+                    <a class="nav-link" style="padding: 8px 20px; color: white" href="/signup">Sign
+                        Up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="padding: 8px 20px; color: white" href="/login">Login</a>
+                </li>
+                <% } %>
+            </ul>
+        </div>
+    </div>
+</nav>
