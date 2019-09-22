@@ -80,7 +80,7 @@ section {
 
 @media only screen and (max-width: 875px) {
     .navbar {
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 
@@ -147,7 +147,7 @@ HEADER
     position: relative;
     width: 100%;
     padding: 0;
-    padding-bottom: 100px;
+    padding-bottom: 50vh;
 }
 
 #headerSection p {

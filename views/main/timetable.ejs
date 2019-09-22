@@ -7,46 +7,77 @@
     .timetableSection .teacherCode {} */
 </style>
 <%- include('../includes/headBody') %>
-<section class="p-5" id="timetableSection">
-    <h1 class="p-3 themeColor text-center">Time Table</h1>
+<%- include('../includes/navbar') %>
+<section id="timetableSection">
+    <h1 class="sectionHeading">TIME TABLE</h1>
     <div class="container-fluid text-center">
         <div class="timetableContainer">
-            <div class="row">
-                <% let i, j; %>
-                <% for (i = 0; i < 5; i++) { %>
-                <% for (j = 0; j < 12; j++) { %>
-                <% let bgColor = 'grey'; %>
-                <% if (timetable[i][j] === null) { %>
-                <% bgColor = 'grey'; %>
-                <% } else { %>
-                <% if (timetable[i][j].status === 'cancel') { %>
-                <% bgColor = 'red'; %>
-                <% } else { %>
-                <% bgColor = 'green'; %>
-                <% } %>
-                <% } %>
-                <div class="col-1 ttBoxContainer">
-                    <div class="ttBox" style="background-color: <%= bgColor %>">
-                        <span class="location">
-                            <%= timetable[i][j] === null ? 'Break' : timetable[i][j].location %>
-                        </span>
-                        <br>
-                        <span class="subCode">
-                            <%= timetable[i][j] === null ? '' : timetable[i][j].subCode %>
-                        </span>
-                        <br>
-                        <span class="type">
-                            <%= timetable[i][j] === null ? '' : timetable[i][j].type %>
-                        </span>
-                        <br>
-                        <span class="teacherCode">
-                            <%= timetable[i][j] === null ? '' : timetable[i][j].teacherCode %>
-                        </span>
-                        <br>
+            <div class="timetable">
+                <div class="row">
+                    <% let i, j; %>
+                    <div class="col-1 ttBoxContainer">
+                        <div class="ttBoxH" style="background-color:#C845AA">
+                            <span>
+                                Week / Time
+                            </span>
+                        </div>
                     </div>
+                    <% for (j = 0; j < 12; j++) { %>
+                    <% if(j != 2) { %>
+
+                    <div class="col-1 ttBoxContainer">
+                        <div class="ttBoxH" style="background-color:#770DDB">
+                            <span>
+                                <%= timings[j] %> - <%= timings[j + 1] %>
+                            </span>
+                        </div>
+                    </div>
+                    <% } %>
+                    <% } %>
+                    <% for (i = 0; i < 5; i++) { %>
+                    <div class="col-1 ttBoxContainer">
+                        <div class="ttBoxH" style="background-color:#770DDB">
+                            <span>
+                                <%= weeks[i] %>
+                            </span>
+                        </div>
+                    </div>
+                    <% for (j = 0; j < 12; j++) { %>
+                    <% let bgColor = 'grey'; %>
+                    <% if (timetable[i][j] === null) { %>
+                    <% bgColor = 'grey'; %>
+                    <% } else { %>
+                    <% if (timetable[i][j].status === 'cancel') { %>
+                    <% bgColor = 'red'; %>
+                    <% } else { %>
+                    <% bgColor = 'green'; %>
+                    <% } %>
+                    <% } %>
+                    <% if(j != 2) { %>
+                    <div class="col-1 ttBoxContainer">
+                        <div class="ttBox" style="background-color: <%= bgColor %>">
+                            <span class="location">
+                                <%= timetable[i][j] === null ? 'N/A' : timetable[i][j].location %>
+                            </span>
+                            <br>
+                            <span class="subCode">
+                                <%= timetable[i][j] === null ? '' : timetable[i][j].subCode %>
+                            </span>
+                            <br>
+                            <span class="type">
+                                <%= timetable[i][j] === null ? '' : timetable[i][j].type %>
+                            </span>
+                            <br>
+                            <span class="teacherCode">
+                                <%= timetable[i][j] === null ? '' : timetable[i][j].teacherCode %>
+                            </span>
+                            <br>
+                        </div>
+                    </div>
+                    <% } %>
+                    <% } %>
+                    <% } %>
                 </div>
-                <% } %>
-                <% } %>
             </div>
         </div>
     </div>

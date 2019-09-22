@@ -5,13 +5,21 @@
     background-clip: text;
 }
 
+/***************************  navbar  *******************************/
+
+
 
 /************************  time table  ******************************/
 
+
 .timetableContainer {
-    padding: 50px;
-    min-width: 1400px;
+    padding: 10px 30px;
+    width: 100%;
     overflow-x: auto
+}
+
+.timetable {
+    min-width: 1550px;
 }
 
 .ttBoxContainer {
@@ -34,3 +42,13 @@
     padding: 28px;
 }
 
+.ttBoxH {
+    background-color: rgb(85, 85, 85);
+    margin: 10px;
+    padding: 10px 2px;
+    overflow: hidden;
+    transition: 0.5s;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
